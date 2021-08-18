@@ -1,0 +1,29 @@
+#navbar {
+    @include flexCenter;
+    background: #04011d;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    #navbar__container {
+        padding: 0 0 0 130vmin;
+        .navbar__links {
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+            color: $whiteFont;
+            &:hover {
+                transition: all 0.3s ease;
+                color: crimson;
+            }
+        }
+        .navbar__menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            width: 80vmin;
+            list-style: none;
+        }
+    
+    }
+}

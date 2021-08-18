@@ -1,0 +1,22 @@
+#about__container {
+    height: $sectionHeight;
+    h1 {
+        padding: 50px 0 50px 600px;
+        color: $darkBlueColor;
+    }
+    #about__paragraph__container {
+        display: flex;
+        padding-left: 10vh;
+        #about__paragraph {
+            text-indent: 50px;
+            width: 75vmin;
+            text-align: justify;
+        }
+        img {
+            width: 800px;
+            height: 400px;
+            padding-left: 100px;
+            border-radius: 10px;
+        }
+    }
+}

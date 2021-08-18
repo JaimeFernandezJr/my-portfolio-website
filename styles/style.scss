@@ -1,0 +1,26 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+$whiteFont: rgb(216, 214, 214);
+$emeraldFont: #66FCF1;
+$darkBlueColor: hsl(221, 78, 7);
+$sectionHeight: 675px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h1 {
+    font-size: 40px;
+}
+
+@import "./navbar";
+@import "./home-section";
+@import "./aboutme-section";
+@import "./skills-section";
+@import "./projects-section";
+@import "./contact-section";
