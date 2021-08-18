@@ -208,14 +208,17 @@ h1 {
 #skills__section ul {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   -ms-grid-columns: 150px 150px 150px 150px 150px 150px;
       grid-template-columns: 150px 150px 150px 150px 150px 150px;
   grid-row-gap: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 #skills__section img {
@@ -223,6 +226,11 @@ h1 {
   height: 100px;
   -webkit-box-shadow: 5px 5px 10px black;
           box-shadow: 5px 5px 10px black;
+}
+
+#skills__section img:hover {
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
 }
 
 #projects__section {
@@ -248,6 +256,11 @@ h1 {
   height: 400px;
   -webkit-box-shadow: 10px 10px 10px grey;
           box-shadow: 10px 10px 10px grey;
+}
+
+#projects__section #projects__container ul img:hover {
+  width: 410px;
+  height: 410px;
 }
 
 #projects__section #projects__container ul #project__title {
@@ -298,5 +311,10 @@ h1 {
           box-shadow: 5px 5px 10px #040307;
   background-color: white;
   border-radius: 9px;
+}
+
+#contact__section #socmed__icons img:hover {
+  -webkit-box-shadow: 5px 5px 10px gray;
+          box-shadow: 5px 5px 10px gray;
 }
 /*# sourceMappingURL=style.css.map */

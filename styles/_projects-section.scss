@@ -14,7 +14,10 @@
                 width: 400px;
                 height: 400px;
             box-shadow: 10px 10px 10px grey;
-
+                &:hover {
+                    width: 410px;
+                    height: 410px
+                }
             }
             #project__title {
                 margin: 0 140px;

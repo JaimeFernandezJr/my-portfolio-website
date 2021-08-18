@@ -28,6 +28,9 @@
             box-shadow: 5px 5px 10px rgb(4, 3, 7);
             background-color: white;
             border-radius: 9px;
+            &:hover {
+                box-shadow: 5px 5px 10px gray;
+            }
         }
     }
 }
