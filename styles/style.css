@@ -7,6 +7,15 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.overflow-x-hidden {
+  /*   overflow-x: hidden; */
+  border: 1px solid blue;
+}
+
 h1 {
   font-size: 40px;
 }
@@ -21,7 +30,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(130deg, black 0%, #010714 25%, #110111 50%, #040d20 75%, black 100%);
+  background: linear-gradient(130deg, black, #010714 39%, #110111 75%, #040d20 100%);
   height: 50px;
   position: -webkit-sticky;
   position: sticky;
