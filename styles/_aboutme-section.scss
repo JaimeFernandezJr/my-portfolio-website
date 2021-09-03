@@ -7,16 +7,18 @@
     #about__paragraph__container {
         display: flex;
         padding-left: 10vh;
-        #about__paragraph {
-            text-indent: 50px;
-            width: 75vmin;
-            text-align: justify;
-        }
+        flex-direction: row-reverse;
         img {
             width: 800px;
             height: 400px;
             padding-left: 100px;
             border-radius: 10px;
         }
+        #about__paragraph {
+            text-indent: 50px;
+            width: 500px;
+            text-align: justify;
+        }
+        
     }
 }

@@ -90,6 +90,13 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation-name: animated__appear;
+          animation-name: animated__appear;
+  -webkit-animation-timing-function: cubic-bezier(1, 1, 1, 1);
+          animation-timing-function: cubic-bezier(1, 1, 1, 1);
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  position: relative;
 }
 
 #home__section #home__container .intro__text {
@@ -156,6 +163,34 @@ h1 {
   transition: all 0.3s ease;
 }
 
+@-webkit-keyframes animated__appear {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animated__appear {
+  0% {
+    top: 100px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
 #about__container {
   height: 675px;
 }
@@ -170,12 +205,10 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   padding-left: 10vh;
-}
-
-#about__container #about__paragraph__container #about__paragraph {
-  text-indent: 50px;
-  width: 75vmin;
-  text-align: justify;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 #about__container #about__paragraph__container img {
@@ -183,6 +216,12 @@ h1 {
   height: 400px;
   padding-left: 100px;
   border-radius: 10px;
+}
+
+#about__container #about__paragraph__container #about__paragraph {
+  text-indent: 50px;
+  width: 500px;
+  text-align: justify;
 }
 
 #skills__section {
